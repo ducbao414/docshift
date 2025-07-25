@@ -1,6 +1,6 @@
 {
   "name": "docshift",
-  "version": "0.0.72",
+  "version": "0.0.73",
   "description": "Pure Client-side HTML ↔ DOCX conversion library for JavaScript",
   "scripts": {
     "build:iife": "npx esbuild index.js --bundle --platform=browser --format=iife --global-name=docshift --outfile=dist/docshift.js",
