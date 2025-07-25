@@ -154,7 +154,7 @@ Since DocShift runs client-side, CORS restrictions apply to images:
 const html = '<p><img src="https://external-domain.com/image.jpg" /></p>';
 
 // ✅ Better: Use blob URLs or same-origin images
-const html = '<p><img src="data:image/jpeg;base64,/9j/4AAQ..." /></p>';
+const html = '<p><img src="blob:https://your-domain.com/..." /></p>';
 // or
 const html = '<p><img src="/local-image.jpg" /></p>';
 ```
