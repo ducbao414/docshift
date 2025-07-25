@@ -1,0 +1,46 @@
+{
+  "name": "docshift",
+  "version": "0.0.7",
+  "description": "Pure Client-side HTML ↔ DOCX conversion library for JavaScript",
+  "scripts": {
+    "build:iife": "npx esbuild index.js --bundle --platform=browser --format=iife --global-name=docshift --outfile=dist/docshift.js",
+    "build:iife:min": "npx esbuild index.js --bundle --platform=browser --format=iife --global-name=docshift --minify --outfile=dist/docshift.min.js",
+    "build:esm": "npx esbuild index.js --bundle --platform=browser --format=esm --outfile=dist/docshift.mjs",
+    "build": "npm run build:iife && npm run build:iife:min && npm run build:esm"
+  },
+  "exports": {
+    "import": "./dist/docshift.mjs"
+  },
+  "unpkg": "./dist/docshift.min.js",
+  "jsdelivr": "./dist/docshift.min.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "docx": "^7.7.0"
+  },
+  "keywords": [
+    "html",
+    "docx",
+    "html to docx",
+    "docx to html",
+    "html-docx",
+    "docx-html",
+    "html2docx",
+    "docx2html",
+    "openxml",
+    "browser",
+    "converter",
+    "client-side"
+  ],
+  "author": "ducbao414",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ducbao414/docshift"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.8"
+  }
+}
