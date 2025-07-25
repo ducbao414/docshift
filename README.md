@@ -7,9 +7,9 @@ A pure client-side HTML ↔ DOCX conversion library for JavaScript that preserve
 - **Pure Client-Side**: No server dependency - runs entirely in the browser
 - **Style Preservation**: mapping between HTML and DOCX styling
 - **Rich Text Editor Compatible**: Works with TinyMCE, WordPress editor, and other popular rich text editors
-- **Lightweight**: 240KB minified + gzipped
 - **Bidirectional**: Convert HTML to DOCX and DOCX to HTML
-- **Universal**: Available as ESM npm package and vanilla HTML via CDN
+- **Compact, Self-Contained**: 240KB minified + gzipped, no other deps needed.
+- Available as ESM npm package and vanilla HTML via CDN
 
 ## Installation
 
@@ -163,3 +163,13 @@ const html = '<p><img src="/local-image.jpg" /></p>';
 1. Pre-process images through your server/proxy
 2. Convert to blob URLs or data URLs
 3. Replace src attributes before conversion
+
+
+### Acknowledgments
+DocShift is built on top of [mammoth.js](https://github.com/mwilliamson/mammoth.js) and [docx](https://github.com/dolanmiu/docx)
+
+Thanks to these projects for doing the heavy lifting!
+
+A few years back I built [win32.run](https://github.com/ducbao414/win32.run), a Windows XP recreation in the browser that included a basic imitation of MS Word with the ability to open and edit DOCX files directly in the browser.
+
+Finally got around to extracting the document conversion bits into this standalone library.
