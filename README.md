@@ -2,7 +2,7 @@
 
 A pure client-side HTML ↔ DOCX conversion library for JavaScript that preserves styling by mapping between HTML and Word document formats.
 
-[Demo](https://docshift-demo.b95.dev/) [StackBlitz](https://stackblitz.com/edit/vitejs-vite-p8rkzwcw?file=index.html)
+[Demo](https://docshift-demo.b95.dev/) [StackBlitz](https://stackblitz.com/edit/vitejs-vite-p8rkzwcw?file=src%2Fmain.js)
 
 ## Features
 
